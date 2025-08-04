@@ -15,6 +15,7 @@
 }
 
 body {
+    scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
     color: var(--light-color);
     background-color: var(--dark-color);
@@ -253,6 +254,7 @@ a {
     background-color: #252525;
     padding: 20px;
     border-radius: 4px;
+    scroll-margin-block-start: 120px; 
 }
 
 .download-card h3 {
@@ -377,4 +379,33 @@ main {
     .footer-links, .social-links {
         justify-content: flex-start;
     }
+}
+
+.prc-Button-ButtonBase-c50BI {
+    align-items: center;
+    appearance: none;
+    background-color: #13ad32;
+    border: var(--borderWidth-thin, .0625rem) solid;    
+    border-radius: var(--borderRadius-medium, .375rem);
+    color: var(--button-default-fgColor-rest, var(--color-btn-text));
+    cursor: pointer;
+    display: flex;
+    font-family: inherit;
+    font-size: var(--text-body-size-medium, .875rem);
+    font-weight: var(--base-text-weight-medium, 500);
+    gap: var(--base-size-8, .5rem);
+    height: var(--control-medium-size, 2rem);
+    justify-content: space-between;
+    min-width: max-content;
+    padding: 0 var(--control-medium-paddingInline-normal, .75rem);
+    text-align: center;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    transition: 80ms cubic-bezier(.65,0,.35,1);
+    border-color: #252525;
+    transition-property: color, fill, background-color, border-color;
+    
+    color: var(--light-color);
+    width: 100px;
+    
 }
